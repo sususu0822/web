@@ -74,6 +74,23 @@
 			opacity: 1;
 			right: 0;
 		}
+
+		/*text-area*/
+		.textbox {
+			background-color: #eee;
+			width: 435px;
+			height: 150px;
+			border: 1px dotted black;
+			overflow: hidden;
+			transition: 0.4s;
+		}
+		.textbox:hover {
+			background-color: #eee;
+			width: 435px;
+			height: auto;
+			border: 1px dotted black;
+			overflow: hidden;
+		}
 	</style>
 
 </head>
@@ -82,7 +99,7 @@
 	<!--nav bar-->
 	<nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top bg-dark">
 		<a class="navbar-brand" href="../templated-epilogue/index.html">
-			<img src="../templated-epilogue/images/logo.jpg" alt="logo" style="width:40px;" onclick="">
+			<img src="../img/logo.jpg" alt="logo" style="width:40px;" onclick="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
 			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +120,7 @@
 					<a class="nav-link" href="../Shopee/traditonal.html">節慶活動 <span class="sr-only"></span></a>
 				</li>
 				<li>
-					<a class="nav-link" href="../Shopee/ticket.html">售票 <span class="sr-only"></span></a>
+					<a class="nav-link" href="page_1.html">售票 <span class="sr-only"></span></a>
 				</li>
 			</ul>
 		</div>
@@ -138,9 +155,10 @@
 					<a href="#"><img src="images/合欢山.jpg" alt="" /></a>
 					<h3>Mount Hehuan<br>合歡山</h3>
 				</header>
-				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
-					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
-					lacus non ornare.</p>
+				<div class="textbox">
+					<p>合歡山位於南投、花蓮交界，為大甲溪、濁水溪和立霧溪的分水嶺，有雪鄉之稱。每當寒流來襲，合歡山總是展現風姿綽約的雪景，挑動著亞熱帶的台灣子民，想親近皚皚白雪的渴望，飄雪的合歡山就像喧囂的台北街頭，人山人海萬頭鑽動，路堵又塞車，卻也不絕於途，只因禁不起那一片銀白世界的誘惑！
+				</p>
+				</div>
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -154,9 +172,11 @@
 					<a href="#"><img src="images/太鲁阁.jpg" alt="" /></a>
 					<h3>Taroko National Park<br>太魯閣國家公園</h3>
 				</header>
-				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
-					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
-					lacus non ornare.</p>
+				<div class="textbox">
+					<p>台湾第四座国家公园，横跨花莲秀林、台中和平、南投仁爱等三个乡镇，雄伟壮丽的峡谷及断崖峭壁除名列台湾八景之一，更闻名国际成为到访花莲旅客的必游之地。园区依据海拔高度不同而拥有亚热带和高山寒带等气候区
+				</p>
+				</div>
+				
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -171,9 +191,11 @@
 					<a href="#"><img src="images/嘉義阿里山.jpg" alt="" /></a>
 					<h3>Alishan National Scenic Area<br>阿里山國家公園</h3>
 				</header>
-				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
-					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
-					lacus non ornare.</p>
+				<div class="textbox">
+					<p>阿里山國家風景區是台灣最著名的旅遊景點之一，日出、雲海、晚霞、森林與高山鐵路，合稱為阿里山五奇。由於阿里山橫跨熱、暖、溫、寒四帶，山上高大的神木豐富的動植物生態一直是阿里山相當重要的觀光資源。除了森林資源外，還有每年三月至四月的阿里山櫻花季、四月至六月的螢火蟲季，此外每年嘉義縣阿里山鄒族族人為延續過去生命的豆祭，及鄒族於豐年祭期間舉辦的「阿里山鄒族文化之旅」都等著您前來探索。阿里山中繼站奮起湖老街的古早味便當，更是您前往阿里山旅遊不可錯過的重點之一。
+				</p>
+				</div>
+				
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -187,15 +209,38 @@
 					<a href="#"><img src="images/雪山.jpg" alt="" /></a>
 					<h3>Mount Sylvia<br>雪山</h3>
 				</header>
-				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
+				<div class="textbox">
+					<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
 					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
 					lacus non ornare.</p>
+				</div>
+				
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
 									href="https://www.google.com.tw/maps/place/Xueshan/@24.2889602,121.0229671,10.68z/data=!4m5!3m4!1s0x34685f885c8b431f:0x76fea57b5437637b!8m2!3d24.383333!4d121.23"
 									target="_blank" style="color: #FFE4C4;">location</a></span>
 						</button></li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/太鲁阁.jpg" alt="" /></a>
+					<h3>Taroko National Park<br>太魯閣國家公園</h3>
+				</header>
+				<div class="textbox">
+					<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
+					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
+					lacus non ornare.</p>
+				</div>
+				
+				<ul class="actions">
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Taroko+National+Park/@24.1938801,121.4885649,17z/data=!3m1!4b1!4m5!3m4!1s0x346882845fc2e7ef:0xddd9fd85e0b0aa31!8m2!3d24.1938752!4d121.4907536"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button>
+					</li>
 				</ul>
 			</article>
 		</section>
