@@ -15,11 +15,72 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+		/*小按钮*/
+		.buttonsmall {
+			display: inline-block;
+			border-radius: 6px;
+			background-color: #363636;
+			border: none;
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 13px;
+			padding: 3px;
+			width: 130px;
+			transition: all 0.4s;
+			cursor: pointer;
+			margin: 5px;
+		}
+
+		.buttonsmall span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+
+		.buttonsmall span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.4s;
+		}
+
+		/*button字的边框*/
+		.buttonsmall:hover span {
+			padding-right: 25px;
+		}
+
+		/*button颜色*/
+		.buttonsmall:hover {
+			background-color: #CD3333;
+			box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+			transition: 0.1s;
+		}
+
+		.buttonsmall:active {
+			background-color: rgb(233, 105, 105);
+			padding: 2.5px;
+			font-size: 11px;
+			width: 100px;
+			transition: 0.1s;
+		}
+
+		/*箭头*/
+		.buttonsmall:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+	</style>
+
 </head>
 
 <body>
 	<!--nav bar-->
-	<nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top bg-dark" >
+	<nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top bg-dark">
 		<a class="navbar-brand" href="../html/index.html">
 			<img src="../img/logo.jpg" alt="logo" style="width:40px;" onclick="">
 		</a>
@@ -55,7 +116,7 @@
 	<!-- Header -->
 	<header id="header" class="alt">
 		<div class="inner">
-			<h1>Travel</h1>
+			<h1 style="font-size: 100px; padding: 0px;">Travel</h1>
 			<p>Walk outdoor<br>&<br>Explore TAIWAN</p>
 		</div>
 	</header>
@@ -78,50 +139,67 @@
 		<section class="main items">
 			<article class="item">
 				<header>
-					<a href="#"><img src="../../img/合欢山.jpg" alt="" /></a>
+					<a href="#"><img src="images/合欢山.jpg" alt="" /></a>
 					<h3>Mount Hehuan<br>合歡山</h3>
 				</header>
 				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
 					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
 					lacus non ornare.</p>
 				<ul class="actions">
-					<li><a href="#" class="button">More</a></li>
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Hehuanshan/@24.1814079,121.2726342,15z/data=!3m1!4b1!4m5!3m4!1s0x346892bee9aecdef:0x2b3fa0e973bc3fb4!8m2!3d24.181389!4d121.281389"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button></li>
 				</ul>
 			</article>
 			<article class="item">
 				<header>
-					<a href="#"><img src="../../img/太鲁阁.jpg" alt="" /></a>
+					<a href="#"><img src="images/太鲁阁.jpg" alt="" /></a>
 					<h3>Taroko National Park<br>太魯閣國家公園</h3>
 				</header>
 				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
 					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
 					lacus non ornare.</p>
 				<ul class="actions">
-					<li><a href="#" class="button">More</a></li>
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Taroko+National+Park/@24.1938801,121.4885649,17z/data=!3m1!4b1!4m5!3m4!1s0x346882845fc2e7ef:0xddd9fd85e0b0aa31!8m2!3d24.1938752!4d121.4907536"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button>
+					</li>
 				</ul>
 			</article>
 			<article class="item">
 				<header>
-					<a href="#"><img src="../../img/嘉義阿里山.jpg" alt="" /></a>
+					<a href="#"><img src="images/嘉義阿里山.jpg" alt="" /></a>
 					<h3>Alishan National Scenic Area<br>阿里山國家公園</h3>
 				</header>
 				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
 					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
 					lacus non ornare.</p>
 				<ul class="actions">
-					<li><a href="#" class="button">More</a></li>
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Alishan+Township,+Chiayi+County,+605/@23.4498724,120.6597044,11z/data=!3m1!4b1!4m5!3m4!1s0x346ee75449af122b:0x91d9e9efcca8b4ec!8m2!3d23.4354677!4d120.7809676"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button></li>
 				</ul>
 			</article>
 			<article class="item">
 				<header>
-					<a href="#"><img src="../../img/雪山.jpg" alt="" /></a>
+					<a href="#"><img src="images/雪山.jpg" alt="" /></a>
 					<h3>Mount Sylvia<br>雪山</h3>
 				</header>
 				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed
 					feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
 					lacus non ornare.</p>
 				<ul class="actions">
-					<li><a href="#" class="button">More</a></li>
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Xueshan/@24.2889602,121.0229671,10.68z/data=!4m5!3m4!1s0x34685f885c8b431f:0x76fea57b5437637b!8m2!3d24.383333!4d121.23"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button></li>
 				</ul>
 			</article>
 		</section>
