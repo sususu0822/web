@@ -16,7 +16,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 
+
 	<style>
+		/* 圖片全版 */
+		.carousel-inner img {
+			width: 100%;
+			height: 100%;
+		}
+
 		/*小按钮*/
 		.buttonsmall {
 			display: inline-block;
@@ -145,16 +152,33 @@
 	</header>
 	<!-- Banner -->
 	<section id="intro" class="main">
-		<span class="icon fa-diamond major"></span>
-		<h2>Magna porta maximus</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae<br />
-			malesuada turpis. Nam pellentesque in ac aliquam. Aliquam tempor<br />
-			mi porta egestas maximus lorem ipsum dolor.</p>
-		<ul class="actions">
-			<li><a href="#" class="button big">Learn More</a></li>
-		</ul>
+			<section id="demo" class="carousel slide" data-ride="carousel" style="margin-left: 15%;margin-right: 15%; height:400px;width: auto;">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				<!-- The slideshow -->
+				<div class="carousel-inner" >
+					<div class="carousel-item active">
+						<img src="../templated-epilogue/images/原住民/0.jpg" alt="001" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+						<img src="../templated-epilogue/images/原住民/1.jpg" alt="002" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+						<img src="../templated-epilogue/images/原住民/2.jpg" alt="003" width="1100" height="500">
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</section>
 	</section>
-
 	<!-- Wrapper -->
 	<div id="wrapper">
 
