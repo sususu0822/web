@@ -82,15 +82,34 @@
 			height: 150px;
 			border: 1px dotted black;
 			overflow: hidden;
+			
 			transition: 0.4s;
 		}
-
+		.textbox p{
+			text-overflow: ellipsis;
+		}
 		.textbox:hover {
 			background-color: #eee;
 			width: 435px;
 			height: auto;
 			border: 1px dotted black;
 			overflow: hidden;
+		}
+		#demo {
+			background-color: #eee;
+			width: 435px;
+			height: 150px;
+			border: 1px dotted black;
+			overflow: hidden;
+			transition: 0.4s;
+		}
+		#demo:visited {
+			background-color: #eee;
+			width: 435px;
+			height: 150px;
+			border: 1px dotted black;
+			overflow: hidden;
+			transition: 0.4s;
 		}
 	</style>
 
@@ -230,14 +249,14 @@
 					<a href="#"><img src="images/乌来.jpg" alt="" /></a>
 					<h3>Wulai District<br>烏來</h3>
 				</header>
-				<div class="textbox">
+				<div  id="demo">
 					<p>烏來是臺灣北部著名的山地鄉，位於水源保護區，居民以泰雅族居多，南勢溪和桶後溪交流處，此處兩側山峰高聳，溪流蜿蜒而過，形成峻秀的山水奇景，以溫泉、臺車、瀑布和雲仙樂園等聞名。
 						相傳『烏來』一詞原為泰雅族原住民的用語，意思是「溫泉」，所以當地的溫泉也相當有名，泉質為弱鹼性碳酸泉，清徹透明。著名的烏來瀑布，瀑高約80公尺，如白練凌空，聲勢浩大。此外觀光台車亦為烏來的特色之一，原用以運輸林木為主，現為遊客登山遊覽之交通工具，瀑布對面山麓的山地文化村為原住民民俗文物館改建而成，介紹泰雅族原住民文化及風俗習慣，並展示昔日原住民文物，原住民歌舞表演更是文化村內的重頭戲。賞遊烏來，彷如進入世外桃源、人間仙境，是觀光休閒的最佳去處。
 					</p>
 				</div>
 
 				<ul class="actions">
-					<li><a href="#" class="button">More</a>&nbsp;
+					<li><a href="#demo" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
 									href="https://www.google.com.tw/maps/place/Taroko+National+Park/@24.1938801,121.4885649,17z/data=!3m1!4b1!4m5!3m4!1s0x346882845fc2e7ef:0xddd9fd85e0b0aa31!8m2!3d24.1938752!4d121.4907536"
 									target="_blank" style="color: #FFE4C4;">location</a></span>
