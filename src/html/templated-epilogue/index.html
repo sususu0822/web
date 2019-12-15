@@ -77,24 +77,13 @@
 
 		/*text-area*/
 		.textbox {
-			background-color: #eee;
-			width: 435px;
+			margin-left: 0px;
+			margin-right: 0px;
 			height: 150px;
-			border: 1px dotted black;
 			overflow: hidden;
-			
-			transition: 0.4s;
+			line-height: 1.7;
 		}
-		.textbox p{
-			text-overflow: ellipsis;
-		}
-		.textbox:hover {
-			background-color: #eee;
-			width: 435px;
-			height: auto;
-			border: 1px dotted black;
-			overflow: hidden;
-		}
+
 		#demo {
 			background-color: #eee;
 			width: 435px;
@@ -103,6 +92,7 @@
 			overflow: hidden;
 			transition: 0.4s;
 		}
+
 		#demo:visited {
 			background-color: #eee;
 			width: 435px;
@@ -176,9 +166,23 @@
 					<h3>Mount Hehuan<br>合歡山</h3>
 				</header>
 				<div class="textbox">
-					<p>合歡山位於南投、花蓮交界，為大甲溪、濁水溪和立霧溪的分水嶺，有雪鄉之稱。每當寒流來襲，合歡山總是展現風姿綽約的雪景，挑動著亞熱帶的台灣子民，想親近皚皚白雪的渴望，飄雪的合歡山就像喧囂的台北街頭，人山人海萬頭鑽動，路堵又塞車，卻也不絕於途，只因禁不起那一片銀白世界的誘惑！
+					<p>合歡山位於南投、花蓮交界，為大甲溪、濁水溪和立霧溪的分水嶺，有雪鄉之稱。每當寒流來襲，合歡山總是展現風姿綽約的雪景，挑動著亞熱帶的台灣子民，想親近皚皚白雪的渴望，飄雪的合歡山就像喧囂的台北街頭，人山人海萬頭鑽動，路堵又塞車，卻也不絕於途，只因禁不起那
 					</p>
 				</div>
+				<!--下拉显示-->
+				<div id="accordion">
+					<div id="collapseOne" class="collapse" data-parent="#accordion">
+						<div>
+							一片銀白世界的誘惑！
+						</div>
+					</div>
+					<div>
+						<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							更多 . . .
+						</a>
+					</div>
+				</div>
+				<!--下拉显示-->
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -196,7 +200,6 @@
 					<p>台湾第四座国家公园，横跨花莲秀林、台中和平、南投仁爱等三个乡镇，雄伟壮丽的峡谷及断崖峭壁除名列台湾八景之一，更闻名国际成为到访花莲旅客的必游之地。园区依据海拔高度不同而拥有亚热带和高山寒带等气候区
 					</p>
 				</div>
-
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -212,10 +215,23 @@
 					<h3>Alishan National Scenic Area<br>阿里山國家公園</h3>
 				</header>
 				<div class="textbox">
-					<p>阿里山國家風景區是台灣最著名的旅遊景點之一，日出、雲海、晚霞、森林與高山鐵路，合稱為阿里山五奇。由於阿里山橫跨熱、暖、溫、寒四帶，山上高大的神木豐富的動植物生態一直是阿里山相當重要的觀光資源。除了森林資源外，還有每年三月至四月的阿里山櫻花季、四月至六月的螢火蟲季，此外每年嘉義縣阿里山鄒族族人為延續過去生命的豆祭，及鄒族於豐年祭期間舉辦的「阿里山鄒族文化之旅」都等著您前來探索。阿里山中繼站奮起湖老街的古早味便當，更是您前往阿里山旅遊不可錯過的重點之一。
+					<p>阿里山國家風景區是台灣最著名的旅遊景點之一，日出、雲海、晚霞、森林與高山鐵路，合稱為阿里山五奇。由於阿里山橫跨熱、暖、溫、寒四帶，山上高大的神木豐富的動植物生態一直是阿里山相當重要的觀光資源。除了森林資源外，還有每年三月至四月的阿里山櫻花季、四月至六
 					</p>
 				</div>
-
+				<!--下拉显示-->
+				<div id="accordion">
+					<div id="collapseTwo" class="collapse" data-parent="#accordion">
+						<div>
+							月的螢火蟲季，此外每年嘉義縣阿里山鄒族族人為延續過去生命的豆祭，及鄒族於豐年祭期間舉辦的「阿里山鄒族文化之旅」都等著您前來探索。阿里山中繼站奮起湖老街的古早味便當，更是您前往阿里山旅遊不可錯過的重點之一。
+						</div>
+					</div>
+					<div>
+						<a class="card-link" data-toggle="collapse" href="#collapseTwo">
+							更多 . . .
+						</a>
+					</div>
+				</div>
+				<!--下拉显示-->
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -230,12 +246,24 @@
 					<h3>Mount Sylvia<br>雪山</h3>
 				</header>
 				<div class="textbox">
-					<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In
-						sed
-						feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus
-						lacus non ornare.</p>
+					<p>秋天的紅榨槭楓紅、夏夜的星空、向晚的雲海、穿梭林道間的山羌帝雉與大台中唯一親民的千歲紅檜神木，是大雪山國家森林遊樂區最迷人的印象。
+						這裡曾是民國47年開採的大雪山林場，繁榮了東勢與豐原，如今這個距離東勢只消1小時的山城成為了森林遊樂區，繼續為中部的人們</p>
 				</div>
-
+				<!--下拉显示-->
+				<div id="accordion">
+					<div id="collapsefive" class="collapse" data-parent="#accordion">
+						<div>
+							帶來屬於自然的恩惠。此地海拔超過2000公尺，氣候涼爽，目前僅存小神木步道與木馬道一帶保有原始的扁柏巨木林，是遊樂區最美的景色之一；而位於遊樂區最深處，高50公尺，超過1400歲的大神木則曾是台灣第11大巨木呢！
+							野生動物更是大雪山最大的寶藏：山羌、長鬃山羊與白面鼯鼠熱鬧了黑夜，而白天則有帝雉、藍腹鷴與冠羽畫眉等一干山鳥雀越跳耀；漫步林間享受森林浴的舒心之餘，也很容易跟這些小明星們不期而遇喔！
+						</div>
+					</div>
+					<div>
+						<a class="card-link" data-toggle="collapse" href="#collapsefive">
+							更多 . . .
+						</a>
+					</div>
+				</div>
+				<!--下拉显示-->
 				<ul class="actions">
 					<li><a href="#" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -249,12 +277,25 @@
 					<a href="#"><img src="images/乌来.jpg" alt="" /></a>
 					<h3>Wulai District<br>烏來</h3>
 				</header>
-				<div  id="demo">
+				<div class="textbox">
 					<p>烏來是臺灣北部著名的山地鄉，位於水源保護區，居民以泰雅族居多，南勢溪和桶後溪交流處，此處兩側山峰高聳，溪流蜿蜒而過，形成峻秀的山水奇景，以溫泉、臺車、瀑布和雲仙樂園等聞名。
-						相傳『烏來』一詞原為泰雅族原住民的用語，意思是「溫泉」，所以當地的溫泉也相當有名，泉質為弱鹼性碳酸泉，清徹透明。著名的烏來瀑布，瀑高約80公尺，如白練凌空，聲勢浩大。此外觀光台車亦為烏來的特色之一，原用以運輸林木為主，現為遊客登山遊覽之交通工具，瀑布對面山麓的山地文化村為原住民民俗文物館改建而成，介紹泰雅族原住民文化及風俗習慣，並展示昔日原住民文物，原住民歌舞表演更是文化村內的重頭戲。賞遊烏來，彷如進入世外桃源、人間仙境，是觀光休閒的最佳去處。
+						相傳『烏來』一詞原為泰雅族原住民的用語，意思是「溫泉」，所以當地的溫
 					</p>
 				</div>
-
+				<!--下拉显示-->
+				<div id="accordion">
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+						<div>
+							泉也相當有名，泉質為弱鹼性碳酸泉，清徹透明。著名的烏來瀑布，瀑高約80公尺，如白練凌空，聲勢浩大。此外觀光台車亦為烏來的特色之一，原用以運輸林木為主，現為遊客登山遊覽之交通工具，瀑布對面山麓的山地文化村為原住民民俗文物館改建而成，介紹泰雅族原住民文化及風俗習慣，並展示昔日原住民文物，原住民歌舞表演更是文化村內的重頭戲。賞遊烏來，彷如進入世外桃源、人間仙境，是觀光休閒的最佳去處。
+						</div>
+					</div>
+					<div>
+						<a class="card-link" data-toggle="collapse" href="#collapseThree">
+							更多 . . .
+						</a>
+					</div>
+				</div>
+				<!--下拉显示-->
 				<ul class="actions">
 					<li><a href="#demo" class="button">More</a>&nbsp;
 						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
@@ -262,6 +303,37 @@
 									target="_blank" style="color: #FFE4C4;">location</a></span>
 						</button>
 					</li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/吉拉米代梯田.jpg" alt="" /></a>
+					<h3>Cilamitay<br>天空梯田-吉拉米代部落</h3>
+				</header>
+				<div class="textbox">
+					<p>在花蓮縣富里鄉的豐南村，2012年起登錄為吉哈拉艾文化景觀區，超過千公頃的水圳、梯田、次生林、果園、池塘、聚落，以及河川山林，形成難得一見的完整文化生態景觀，包含吉拉米代部落與吉哈拉艾聚落，都涵蓋在其中。
+						吉拉米代部落（Cilamitay，阿美族語中大樹根之</p>
+				</div>
+				<!--下拉显示-->
+				<div id="accordion">
+					<div id="collapsefour" class="collapse" data-parent="#accordion">
+						<div>
+							意），有阿美、布農、閩南、客家等族群居住。在丘陵地上的梯田，生產出豐盛糧食。其北邊的石厝溝溪有著清澈水流，過去隨處可見台東間爬岩鰍與日本禿頭鯊，因其在阿美與皆稱「Hara」，族人便稱此聚落為吉哈拉艾（Ciharaay）。部落族人凝聚力量，將已經廢校的永豐國小四維分校重新打造為「一起哈拉基地」，進行文化傳承、部落產物行銷推廣、推動產地餐桌，與更多人分享部落的文化生活。
+						</div>
+					</div>
+					<div>
+						<a class="card-link" data-toggle="collapse" href="#collapsefour">
+							更多 . . .
+						</a>
+					</div>
+				</div>
+				<!--下拉显示-->
+				<ul class="actions">
+					<li><a href="#" class="button">More</a>&nbsp;
+						<button class="buttonsmall" style="vertical-align:middle; left: 50%;"><span><a
+									href="https://www.google.com.tw/maps/place/Xueshan/@24.2889602,121.0229671,10.68z/data=!4m5!3m4!1s0x34685f885c8b431f:0x76fea57b5437637b!8m2!3d24.383333!4d121.23"
+									target="_blank" style="color: #FFE4C4;">location</a></span>
+						</button></li>
 				</ul>
 			</article>
 		</section>
